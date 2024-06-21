@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+<style>
+    body{
+        background-image: url('img/rain.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .login-box{
+        width: 300px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-top: 150px;
+        border-radius: 10px;
+    }
+    h3{
+        font-size: 25px;
+       
+    }
+    .login-box-top{
+        width: 100%;
+        height: 50px;
+       
+      
+    }
+    h3{
+        position: absolute;
+        margin-left: 7%;
+        color: white;
+    }
+    .input-text{
+        width: 90%;
+        height: 35px;
+        margin-top: 5%;
+        border-radius: 5px;
+        border:none;
+        outline: none;
+        padding-left: 10px;
+        background-color: transparent;
+        border:2px solid grey;
+        color: white;
+    }
+    .login-btn{
+        width: 95%;
+        height: 40px;
+        border-radius: 5px;
+        border:none;
+        background-color: grey;
+    }
+    .login-btn:hover{
+         background-color: azure; 
+        cursor: pointer;
+    }
+    .divider{
+        width: 95%;
+        height: 1px;
+        background-color: grey;
+        margin-top: 20px;
+    }
+    label{
+        color: white;
+    }
+    .signup_btn, .forgot_btn{
+        text-decoration: none;
+        
+        color: grey;
+    }
+    .signup_btn:hover{
+        color: red;
+    }
+    .forgot_btn:hover{
+        color: orange;
+    }
+</style>
+<body>
+
+    
+    <center>
+    <div class="login-box">
+        <div class="login-box-top">            
+        <h3 style="margin-top: 20px;">Login</h3>
+    </div>
+            <br>
+        <input class="input-text" type="text" placeholder="Enter Username">
+        <input class="input-text" type="password" placeholder="Enter Passsword">
+        <br><br>
+        <button class="login-btn">Login</button>
+        
+        <div class="divider"></div>
+        <br>
+        <label>Don't have an Account? <a class="signup_btn" href="">Signup</a></label> 
+
+        <br><br>
+        <a class="forgot_btn" href="">Forgot Password?</a>
+        
+        
+       
+    </div>
+    </div>
+</center>
+    
+</body>
+</html>
