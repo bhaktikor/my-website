@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style>
+	body{
+		background-color: aquamarine;
+	}
+</style>
+<body>
+	<center>
+<input type="number" id="num1" name="" placeholder="number 1" onkeyup="addition()">
+<input type="number" id="num2" name="" placeholder="number 2" onkeyup="addition()">
+<h3 id="result"></h3>
+
+
+<input type="text" id="name_text" name="" onkeyup="autoAdd()">
+<h3 id="printResult"></h3>
+
+</center>
+</body>
+</html>
+<script>
+ function addition(){
+  var num1 = document.getElementById("num1").value;
+  var num2 = document.getElementById("num2").value;
+
+  if(num1 != '' && num2 != ''){
+	  var total = parseInt(num1) + parseInt(num2);
+	  document.getElementById("result").innerHTML = total;
+	}
+	else{
+		document.getElementById("result").innerHTML = "";
+	}
+ }
+
+
+function autoAdd(){
+  var name = document.getElementById("name_text").value;
+  
+  if(name != ''){
+  	document.getElementById("printResult").innerHTML = "Hello " + name;
+  }
+  else{
+  	document.getElementById("printResult").innerHTML = "";
+  }
+}
+
+
+</script>
