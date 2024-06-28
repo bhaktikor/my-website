@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: azure;
+    }
+    
+.main_box{
+    background-color: aquamarine;
+    width: 20%;
+    height: 40vh;
+    margin-top: 10px;
+}
+</style>
+<body>
+<center>
+<div class="main_box"><br><br>
+<input type="text" id="name" name="" placeholder=" enter your full name"><br><br>
+<input type="text" id="email" name="" placeholder=" enter your email"><br><br>
+<input type="text" id="mobile_no" name="" placeholder=" enter your mobile no"><br><br>
+<input type="password"  id="password" placeholder=" enter your password"><br><br>
+<button onclick="check_info()"> submit</button>
+</div>
+</center>
+</body>
+</html>
+<script>
+    function check_info(){
+        var name= document.getElementById("name").value;
+        var email= document.getElementById("email").value;
+        var mobile_no= document.getElementById("mobile_no").value;
+        var password= document.getElementById("password").value;
+        if(name == '')
+        {
+            alert("please enter your full name");
+        
+        }
+
+        else if(email == '')
+        {
+            alert("please enter your email");
+
+        }
+        
+        else if( mobile_no.length > 10 || mobile_no.length < 10)
+        {
+            alert("please enter correct 10 digit mobile_no");
+        }        
+        else if(password.length != 4 )
+        {
+            alert("please enter 4 digit password");
+        }
+
+    else{
+          alert("all info are correct")
+          
+    }
+}
+</script>
